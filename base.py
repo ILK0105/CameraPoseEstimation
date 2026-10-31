@@ -245,7 +245,7 @@ def main():
     # TASK1 : VGG16-based NetVLAD Structure
     # -------------------------------
     # 모델 구조는 model.py 에서 구현. 만든 직후 k-means 로 클러스터 중심을 초기화 (-> [6] init_centroids)
-    model = NetVLADModel(num_clusters=16).to(device)
+    model = NetVLADModel(num_clusters=16).to(device) #구현 완
     init_centroids(model, train_set.db_images, transform, device)   # (Provided)
 
 
